@@ -4,7 +4,7 @@ from tkinter import messagebox
     
 
 def SolveCubicEqutions(a : float,b : float,c : float,d : float,e : float ,Low : int = -200 , High:int = 200) -> list :   
-        if e == 0 and d == 0 :
+        if e == d :
             delta = b*b - 4*a*c
             if delta < 0:
                 return []
